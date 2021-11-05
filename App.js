@@ -1,19 +1,23 @@
 import React from 'react';
 import {View, Text, Image, ScrollView} from 'react-native';
 import CoreComponents from './scr/components/CoreComponents';
-import SectionListBasics from './App_SectionList_Platform 2';
-// import SectionListBasics from './scr/components/SectionList_Platform 2';
+import ScrollViewComp from './scr/components/ScrollViewComp';
+// import FlatListBasics from './scr/components/FlatListBasics';
+import SectionListBasics from './scr/components/SectionListBasics';
 
 const App = () => {
   return (
     // <ScrollView>
     <View>
+      <Text style={{fontSize: 28, color: 'red', textAlign: 'center'}}>
+        ReactNative Components
+      </Text>
       <CoreComponents />
-      {/* <App_ListBasic /> */}
+      <ScrollViewComp />
       {/* <FlatListBasics /> */}
       <SectionListBasics />
     </View>
-    //  </ScrollView>
+    // </ScrollView>
   );
 };
 

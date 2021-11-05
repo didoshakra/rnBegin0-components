@@ -13,17 +13,18 @@ import {
 const App = () => {
   const [input, setInput] = useState('');
   return (
-    <ScrollView>
-      <Text style={{fontSize: 28, color: 'red', textAlign: 'center'}}>
-        CoreComponents
+    // <ScrollView>
+    <View>
+      <Text style={{fontSize: 24, color: 'firebrick', textAlign: 'center'}}>
+        CoreComponents.js
       </Text>
       <View>
         <Text style={{fontSize: 18, color: 'green'}}>
           ScrollView+View+Text+Image+TextInput+TouchableOpacity:
         </Text>
-        <Text style={{fontSize: 18, color: 'firebrick'}}>
+        {/* <Text style={{fontSize: 18, color: 'firebrick'}}>
           CoreComponents.js
-        </Text>
+        </Text> */}
       </View>
       <View
         style={{
@@ -58,13 +59,15 @@ const App = () => {
           />
         </TouchableOpacity>
       </View>
-      <Text style={{padding: 10, fontSize: 22}}>
+      <Text style={{padding: 10, fontSize: 22,color:'blue'}}>
+        Переклад:
         {input
           .split(' ')
           .map(word => word && '🍕')
           .join(' ')}
       </Text>
-    </ScrollView>
+    </View>
+    // {/* </ScrollView> */}
   );
 };
 

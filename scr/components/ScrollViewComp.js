@@ -1,4 +1,4 @@
-//ScrollView//https://reactnative.dev/docs/using-a-scrollview
+//ScrollViewComp//https://reactnative.dev/docs/using-a-scrollview
 import React from 'react';
 import {Image, ScrollView, Text} from 'react-native';
 
@@ -8,40 +8,42 @@ const logo = {
   height: 64,
 };
 
-const App = () => (
+const ScrollViewComp = () => (
   <ScrollView>
-    <Text style={{fontSize: 46}}>Scroll me plz</Text>
+    <Text style={{fontSize: 24, color: 'firebrick', textAlign: 'center'}}>
+      ScrollViewComp.js
+    </Text>
+    <Text style={{fontSize: 20}}>Scroll me plz</Text>
     <Image source={logo} />
     <Image source={logo} />
     <Image source={logo} />
     <Image source={logo} />
     <Image source={logo} />
-    <Text style={{fontSize: 46}}>If you like</Text>
+    <Text style={{fontSize: 20}}>If you like</Text>
     <Image source={logo} />
     <Image source={logo} />
     <Image source={logo} />
     <Image source={logo} />
     <Image source={logo} />
-    <Text style={{fontSize: 96}}>Scrolling down</Text>
+    <Text style={{fontSize: 20}}>Scrolling down</Text>
     <Image source={logo} />
     <Image source={logo} />
     <Image source={logo} />
     <Image source={logo} />
     <Image source={logo} />
-    <Text style={{fontSize: 96}}>What's the best</Text>
+    <Text style={{fontSize: 20}}>What's the best</Text>
     <Image source={logo} />
     <Image source={logo} />
     <Image source={logo} />
     <Image source={logo} />
     <Image source={logo} />
-    <Text style={{fontSize: 96}}>Framework around?</Text>
+    <Text style={{fontSize: 20}}>Framework around?</Text>
     <Image source={logo} />
     <Image source={logo} />
     <Image source={logo} />
     <Image source={logo} />
     <Image source={logo} />
-    <Text style={{fontSize: 80}}>React Native</Text>
   </ScrollView>
 );
 
-export default App;
+export default ScrollViewComp;

@@ -1,35 +1,10 @@
-//SectionList/https://https://reactnative.dev/docs/using-a-listview
-//Platform/https://reactnative.dev/docs/platform-specific-code
 import React from 'react';
-import {Platform, SectionList, StyleSheet, Text, View} from 'react-native';
-
-//+Platform
-// const Component = Platform.select({
-//   ios: () => require('ComponentIOS'),
-//   android: () => require('ComponentAndroid'),
-// })();
-// <Component />;
-
-// if (Platform.Version === 25) {
-//   console.log('Running on Nougat!');
-// }
-
-// const majorVersionIOS = parseInt(Platform.Version, 10);
-// if (majorVersionIOS <= 9) {
-//   console.log('Work around a change in behavior');
-// }
-//-Platform
+import {SectionList, StyleSheet, Text, View} from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingTop: 22,
-    ...Platform.select({
-      ios: {backgroundColor: 'red'},
-      // android: {backgroundColor: 'green'},
-      android: {backgroundColor: 'yellow'},
-      default: {backgroundColor: 'blue'}, // other platforms, web for example
-    }),
   },
   sectionHeader: {
     paddingTop: 2,
@@ -38,7 +13,8 @@ const styles = StyleSheet.create({
     paddingBottom: 2,
     fontSize: 14,
     fontWeight: 'bold',
-    backgroundColor: 'rgba(247,247,247,1.0)',
+    color: 'red',
+    backgroundColor: 'rgba(247,247,247,5.0)',
   },
   item: {
     padding: 10,
@@ -50,11 +26,14 @@ const styles = StyleSheet.create({
 const SectionListBasics = () => {
   return (
     <View style={styles.container}>
+      <Text style={{fontSize: 24, color: 'firebrick', textAlign: 'center'}}>
+        SectionListBasics.js
+      </Text>
       <SectionList
         sections={[
           {title: 'D', data: ['Devin', 'Dan', 'Dominic']},
           {
-            title: 'JJ',
+            title: 'J',
             data: [
               'Jackson',
               'James',
