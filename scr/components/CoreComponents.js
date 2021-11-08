@@ -15,7 +15,7 @@ const App = () => {
   return (
     // <ScrollView>
     <View>
-      <Text style={{fontSize: 24, color: 'firebrick', textAlign: 'center'}}>
+      <Text style={{fontSize: 22, color: 'firebrick', textAlign: 'center'}}>
         CoreComponents.js
       </Text>
       <View>
@@ -38,7 +38,7 @@ const App = () => {
         <TextInput
           style={{
             fontSize: 15,
-            color: 'blac',
+            color: 'black',
           }}
           placeholder="Type here to translate!/ Введіть тут для перекладу"
           defaultValue={input}
@@ -59,7 +59,7 @@ const App = () => {
           />
         </TouchableOpacity>
       </View>
-      <Text style={{padding: 10, fontSize: 22,color:'blue'}}>
+      <Text style={{padding: 10, fontSize: 22, color: 'blue'}}>
         Переклад:
         {input
           .split(' ')
